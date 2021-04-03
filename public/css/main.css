@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #333;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+#content {
+  width: 600px;
+  margin: auto;
+  background-color: #222;
+  color: whitesmoke;
+  padding: 1em;
+}
+
+.flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.flow-item-portrait {
+  margin: 0 1em;
+}
+
+.flow-item-portrait .screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+}
+
+.flow-item-portrait img {
+  width: 100px;
+}
+
+.flow-item-portrait .cloud {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 60px;
+}
+
+.flow-item-portrait .data-flow {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 50px;
+}
+
+.flow-item-portrait .data-flow img {
+  width: 40px;
+}
+
+.flow-item-portrait .user {
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  height: 80px;
+}
+
+.flow-item-portrait .user img {
+  width: 70px;
+}
