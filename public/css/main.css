@@ -1,27 +1,37 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #333;
+  background-color: whitesmoke;
   padding: 0;
   margin: 0;
-  display: flex;
+  display: flex;  
+}
+
+body.dark {
+  background-color: #333;
+  color-scheme: dark;
 }
 
 #content {
-  width: 600px;
+  max-width: 600px;
   margin: auto;
+  background-color: white;
+  padding: 1em;
+}
+
+body.dark #content {
   background-color: #222;
   color: whitesmoke;
-  padding: 1em;
 }
 
 .flow {
   display: flex;
   justify-content: center;
   align-items: center;  
+  flex-wrap: wrap;
 }
 
 .flow-item-portrait {
-  margin: 0 1em;
+  margin: 1em;
 }
 
 .flow-item-portrait .screen {
