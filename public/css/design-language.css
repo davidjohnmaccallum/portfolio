@@ -1,0 +1,8 @@
+.building-block {
+  display: flex;
+}
+
+.building-block img {
+  height: 200px;
+  margin: 0 1em 1em 0;
+}

@@ -7,9 +7,11 @@ app.use(express.static('public'))
 app.use(morgan('tiny'))
 
 app.get('/', (req, res) => {
-  res.render('index', {
-    message: 'Hello world!'
-  })
+  res.render('index', {})
+})
+
+app.get('/design-language', (req, res) => {
+  res.render('design-language', {})
 })
 
 app.use((req, res, _next) => {
