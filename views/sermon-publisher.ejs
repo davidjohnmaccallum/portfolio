@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Sermon Publisher</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <!-- <script src='js/main.js'></script> -->
+  </head>
+  <body class="dark">
+    <div id="content">
+      <h1>Sermon Publisher</h1>
+      <p>
+        The Covid-19 pandemic is forcing churches to find new ways to engage
+        with their members. Sermon publisher allows pastors to publish sermons
+        to the Internet from their mobile phones. It has two components: A
+        mobile app for the pastor to publish sermons. And a public website for
+        people to listen to the sermons.
+      </p>
+
+      <h2>Pastor App</h2>
+      <p>
+        The pastor app has a login screen, a list of sermons and a form for
+        uploading new sermons. Pastors notify their audience that a new sermon
+        is available by sharing the link via WhatsApp, SMS, Email etc.
+      </p>
+      <div class="flow">
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_login.png" />
+          </div>
+        </div>
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_fab_list.png" />
+          </div>
+        </div>
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_form.png" />
+          </div>
+        </div>
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_media.png" />
+          </div>
+        </div>
+      </div>
+
+      <h2>Public Website</h2>
+      <p>
+        The public website allows visitors to browse through the list of sermons
+        and listen to a sermon.
+      </p>
+      <div class="flow">
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_list.png" />
+          </div>
+        </div>
+        <div class="flow-item-portrait">
+          <div class="screen">
+            <img src="/img/ux_patterns_media.png" />
+          </div>
+        </div>
+      </div>
+
+      <h2>Technical Details</h2>
+      <p>I love light weight, simple and efficient tools.</p>
+      <p>
+        I built the pastor app using Flutter. I used Google
+        authentication which makes things easier for developer and user. This
+        was easy to implement thanks to
+        <a href="https://pub.dev/packages/google_sign_in">google_sign_in</a>.
+        The first step in the sermon publish process is to select an audio file
+        from the device filesystem. This took a bit of time to get right. When
+        the pastor presses the upload button the sermon metadata (title, author,
+        date etc) is uploaded to Firebase Firestore and the sermon audio file is
+        uploaded to Firebase Storage. I also added a screen to allow pastors to
+        keep an eye on hosting costs.
+      </p>
+      <p>
+        The public website is built using NodeJS, Express, Pug templates and
+        Bootstrap and hosted using Heroku.
+      </p>
+      <ul>
+        <li><a href='https://github.com/davidjohnmaccallum/sermon_publisher_app'>Pastor App GitHub</a></li>
+        <li><a href='https://github.com/davidjohnmaccallum/sermon_publisher_web'>Public Website GitHub</a></li>
+        <li><a href='http://sermon-publish.herokuapp.com/'>Public Website</a></li>
+      </ul>
+    </div>
+  </body>
+</html>

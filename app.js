@@ -10,6 +10,10 @@ app.get('/', (req, res) => {
   res.render('index', {})
 })
 
+app.get('/sermon-publisher', (req, res) => {
+  res.render('sermon-publisher', {})
+})
+
 app.get('/design-language', (req, res) => {
   res.render('design-language', {})
 })
